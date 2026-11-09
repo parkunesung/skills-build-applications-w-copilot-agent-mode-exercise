@@ -31,6 +31,14 @@
 > - 페이지가 매겨진 응답 및 배열 응답과의 호환성 유지
 > ```
 
+Codespaces에서 백엔드에 연결하려면 `octofit-tracker/frontend/.env.local` 파일을 만들고 Codespace 이름을 설정하세요.
+
+```env
+VITE_CODESPACE_NAME=your-codespace-name
+```
+
+로컬에서 실행할 때는 변수를 설정하지 않으면 API가 `http://localhost:8000`을 사용합니다. Vite 환경 변수 변경 후 개발 서버를 다시 시작하세요.
+
 ### :keyboard: 활동: 프레젠테이션 계층 실행 및 확인
 
 Vite 개발 서버로 React 앱을 실행하고(예: `npm run dev`) 포트 `5173`을 엽니다.
